@@ -1,0 +1,43 @@
+$bg-color:#5a5555;
+
+.navbar
+{
+    background-color: $bg-color;
+}
+.jumbotron
+{
+    background-image: url("imgs/header.jpeg") ;
+    .display-3
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        &::before
+        {
+            content: "...";
+        }
+    }
+
+    a.btn-primary
+    {
+        border: 0;
+        background-color: $bg-color;
+        &:hover
+        {
+            background-color: #353131;
+        }
+    }
+}
+
+footer{
+    background-color: $bg-color;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    p
+    {
+        margin: 0;
+        opacity: 0.5;
+    }
+}
